@@ -1,0 +1,71 @@
+
+baseURL: "https://LinTzuTang.github.io/"
+languageCode: "en-us"
+title: "Tzu-Tang Lin (林子棠)"
+theme: "hugo-profile"
+paginate: 10
+
+params:
+  description: "AI × Bioinformatics — Drug Discovery, Genomics, and Biomedical AI."
+  favicon: "/img/favicon.png"
+  author:
+    name: "Tzu-Tang Lin (林子棠)"
+    image: "/img/avatar.png"
+    role: "AI × Bioinformatics Researcher & Developer"
+    organization: "Taiwan / US"
+    organization_url: "https://github.com/LinTzuTang"
+
+  # Header buttons
+  buttons:
+    - name: "Projects"
+      url: "/projects/"
+    - name: "Publications"
+      url: "/publications/"
+    - name: "Experience"
+      url: "/experience/"
+    - name: "Skills"
+      url: "/skills/"
+    - name: "CV (DOCX)"
+      url: "/files/Tzu-Tang_Lin_CV_formatted.docx"
+
+  socials:
+    - name: "github"
+      url: "https://github.com/LinTzuTang"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/tzutang-lin/"
+    - name: "google-scholar"
+      url: "https://scholar.google.com/citations?user=2Yxesf0AAAAJ&hl=en"
+    - name: "email"
+      url: "mailto:b03601046@gmail.com"
+
+  theme:
+    defaultTheme: "auto"   # light | dark | auto
+    disableThemeToggle: false
+
+  navbar:
+    disableSearch: true
+
+  footer:
+    enable: true
+    customText: "© {year} Tzu-Tang Lin"
+
+menu:
+  main:
+    - name: "About"
+      url: "/"
+      weight: 1
+    - name: "Projects"
+      url: "/projects/"
+      weight: 2
+    - name: "Publications"
+      url: "/publications/"
+      weight: 3
+    - name: "Experience"
+      url: "/experience/"
+      weight: 4
+    - name: "Skills"
+      url: "/skills/"
+      weight: 5
+    - name: "CV"
+      url: "/files/Tzu-Tang_Lin_CV_formatted.docx"
+      weight: 6
