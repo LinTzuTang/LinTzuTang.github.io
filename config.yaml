@@ -1,72 +1,187 @@
-
 baseURL: "https://LinTzuTang.github.io/"
 languageCode: "en-us"
 title: "Tzu-Tang Lin (林子棠)"
-theme: "hugo-profile"
+theme: hugo-profile
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  page: ["HTML", "RSS"]
+
+enableRobotsTXT: true
+
 pagination:
-  pagerSize: 10
+  pagerSize: 6
 
-params:
-  description: "AI × Bioinformatics — Drug Discovery, Genomics, and Biomedical AI."
-  favicon: "/img/favicon.png"
-  author:
-    name: "Tzu-Tang Lin (林子棠)"
-    image: "/img/avatar.png"
-    role: "AI × Bioinformatics Researcher & Developer"
-    organization: "Taiwan / US"
-    organization_url: "https://github.com/LinTzuTang"
-
-  # Header buttons
-  buttons:
-    - name: "Projects"
-      url: "/projects/"
-    - name: "Publications"
-      url: "/publications/"
-    - name: "Experience"
-      url: "/experience/"
-    - name: "Skills"
-      url: "/skills/"
-    - name: "CV (DOCX)"
-      url: "/files/Tzu-Tang_Lin_CV_formatted.docx"
-
-  socials:
-    - name: "github"
-      url: "https://github.com/LinTzuTang"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/tzutang-lin/"
-    - name: "google-scholar"
-      url: "https://scholar.google.com/citations?user=2Yxesf0AAAAJ&hl=en"
-    - name: "email"
-      url: "mailto:b03601046@gmail.com"
-
-  theme:
-    defaultTheme: "auto"   # light | dark | auto
-    disableThemeToggle: false
-
-  navbar:
-    disableSearch: true
-
-  footer:
-    enable: true
-    customText: "© {year} Tzu-Tang Lin"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 menu:
   main:
-    - name: "About"
-      url: "/"
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
       weight: 1
-    - name: "Projects"
-      url: "/projects/"
-      weight: 2
-    - name: "Publications"
-      url: "/publications/"
-      weight: 3
-    - name: "Experience"
-      url: "/experience/"
-      weight: 4
-    - name: "Skills"
-      url: "/skills/"
-      weight: 5
-    - name: "CV"
-      url: "/files/Tzu-Tang_Lin_CV_formatted.docx"
-      weight: 6
+
+params:
+  title: "Tzu-Tang Lin"
+  description: "AI × Bioinformatics"
+  favicon: "/img/a.jpg"
+  useBootstrapCDN: true
+
+  theme:
+    #  defaultTheme: "light" or "dark"
+    defaultTheme: "ㄐㄜ"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.6
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Tzu-Tang Lin"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: true
+      disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Tzu-Tang Lin."
+    subtitle: "AI × Bioinformatics  R&D"
+    content: >
+      Motivated to tap into the potential of **AI** and **data science** to reveal
+      game-changing capabilities that accelerate the advancement of **precision medicine**
+      and maximally benefit public health.
+    image: /img/b.png
+    roundImage: false
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "CV (pdf)"
+      url: "/files/Tzu-Tang_Lin_CV.pdf"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/LinTzuTang
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/tzutang-lin/
+        - icon: fas fa-graduation-cap
+          url: https://scholar.google.com/citations?user=2Yxesf0AAAAJ
+
+
+  # About 
+  about:
+    enable: true
+    title: "About Me"
+    image: "/img/a.jpg"
+    content: |-
+      **AI × Bioinformatics Researcher & Developer** with over 7 years of cross-disciplinary R&D experience spanning **drug discovery**, **genomics**, and **biomedical AI**. Passionate about transforming complex biological data into actionable insights for advancing **precision medicine** and improving public health outcomes.
+
+      Proven expertise in **AI-driven RNA–small molecule drug modeling**, **antimicrobial peptide** and **functional protein design**, **whole-genome sequencing (WGS)** and **genome-wide association studies (GWAS)**, as well as **electronic health records (EHR)**–based medical applications.
+
+      Experienced in **independent research**, publishing **peer-reviewed articles**, serving as a **scientific reviewer**, and mentoring students. Skilled in leading **end-to-end research pipelines**—from dataset curation to deep learning model development—and collaborating effectively with academia, hospitals, and industry partners.
+    skills:
+      enable: true
+      title: "Core Expertise:"
+      items:
+        - "Bioinformatics"
+        - "Data Science"
+        - "Machine Learning"
+        - "AI Drug Discovery"
+        - "Precision Medicine"
+        - "Genetic Analysis"
+    
+
+
+
+
+  # Projects 區塊
+  projects:
+    enable: false
+    items:
+      - title: Cross-Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity
+        content: Built a CLIP-style framework integrating RNA sequence, ligand SMILES (RiNALMo, SMI-TED), and 3D features; achieved Test RMSE ~1.68 vs 1.85 benchmark.
+        image: /img/projects/rna-ligand.png
+        badges: ["CLIP-style", "GNN", "3D"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/RLC-CLIP/tree/main/CoRSA
+      - title: RNA-targeted Virtual Screening & Docking
+        content: Scaled RNAmigos screening to ~10M molecules across 3 RNAs; evaluated with AutoDock Vina; generated decoys with DeepCoy for benchmarking.
+        image: /img/projects/vs.png
+        badges: ["RNAmigos", "Vina", "DeepCoy"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos
+      - title: Generative Protein Design
+        content: RFdiffusion for backbone → AlphaFold for structure → ProteinMPNN for sequence; iterative design loop.
+        image: /img/projects/protein.png
+        badges: ["RFdiffusion", "AlphaFold", "ProteinMPNN"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/cheminformatics/tree/main/RFdiffusion-Protein-Design
+
+  # Contact 區塊
+  contact:
+    enable: true
+    content: "My inbox is always open—happy to chat about AI for Bio and collaborations."
+    btnName: "Email me"
+    btnLink: "mailto:b03601046@gmail.com"
+
+  # Footer
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: "Recent Posts"
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/LinTzuTang
+      linkedin: https://www.linkedin.com/in/tzutang-lin/
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
