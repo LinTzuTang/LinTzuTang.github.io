@@ -3,7 +3,8 @@ baseURL: "https://LinTzuTang.github.io/"
 languageCode: "en-us"
 title: "Tzu-Tang Lin (林子棠)"
 theme: "hugo-profile"
-paginate: 10
+pagination:
+  pagerSize: 10
 
 params:
   description: "AI × Bioinformatics — Drug Discovery, Genomics, and Biomedical AI."
