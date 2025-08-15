@@ -3,6 +3,7 @@ languageCode: "en-us"
 title: "Tzu-Tang Lin (林子棠)"
 theme: hugo-profile
 
+
 outputs:
   home: ["HTML", "RSS", "JSON"]
   page: ["HTML", "RSS"]
@@ -19,21 +20,38 @@ markup:
 
 menu:
   main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
+    - name: About
+      url: /#about
       weight: 1
+    - name: News
+      url: /#news
+      weight: 2
+    - name: Experience
+      url: /#experience
+      weight: 3
+    - name: Projects
+      url: /#projects
+      weight: 4
+    # - name: Contact
+    #   url: /#contact
+    #   weight: 5
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 99
+
+  
 
 params:
   title: "Tzu-Tang Lin"
   description: "AI × Bioinformatics"
-  favicon: "/img/a.jpg"
+  favicon: "/img/c.jpeg"
   useBootstrapCDN: true
 
   theme:
     #  defaultTheme: "light" or "dark"
-    defaultTheme: "ㄐㄜ"
+    defaultTheme: "dark"
 
   font:
     fontSize: 1rem
@@ -48,12 +66,12 @@ params:
     stickyNavBar:
       enable: true
       showOnScrollUp: true
-    enableSeparator: true
+    enableSeparator: false
     menus:
-      disableAbout: false
-      disableExperience: false
+      disableAbout: true
+      disableExperience: true
       disableEducation: true
-      disableProjects: false
+      disableProjects: true
       disableAchievements: true
       disableContact: true
 
@@ -61,11 +79,11 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Tzu-Tang Lin."
+    title: "Tzu-Tang Lin"
     subtitle: "AI × Bioinformatics  R&D"
     content: >
       Motivated to tap into the potential of **AI** and **data science** to reveal
-      game-changing capabilities that accelerate the advancement of **precision medicine**
+      game-changing capabilities that accelerate the advancement of precision medicine  
       and maximally benefit public health.
     image: /img/b.png
     roundImage: false
@@ -73,7 +91,7 @@ params:
       enable: false
     button:
       enable: true
-      name: "CV (pdf)"
+      name: "CV (pdf)       "
       url: "/files/Tzu-Tang_Lin_CV.pdf"
       download: false
       newPage: true
@@ -86,31 +104,92 @@ params:
         - icon: fas fa-graduation-cap
           url: https://scholar.google.com/citations?user=2Yxesf0AAAAJ
 
-
-  # About 
   about:
     enable: true
     title: "About Me"
     image: "/img/a.jpg"
     content: |-
-      **AI × Bioinformatics Researcher & Developer** with over 7 years of cross-disciplinary R&D experience spanning **drug discovery**, **genomics**, and **biomedical AI**. Passionate about transforming complex biological data into actionable insights for advancing **precision medicine** and improving public health outcomes.
+      AI × Bioinformatics researcher & developer with extensive cross-disciplinary R&D experience spanning drug discovery, genomics, and biomedical AI. Passionate about transforming complex biological data into actionable insights for advancing precision medicine and improving public health outcomes.
 
-      Proven expertise in **AI-driven RNA–small molecule drug modeling**, **antimicrobial peptide** and **functional protein design**, **whole-genome sequencing (WGS)** and **genome-wide association studies (GWAS)**, as well as **electronic health records (EHR)**–based medical applications.
+      Proven expertise in AI-driven RNA–small molecule drug modeling, antimicrobial peptide and functional protein design, next-generation sequencing (NGS) and genome-wide association studies (GWAS), as well as electronic health records (EHR)–based medical applications.
 
-      Experienced in **independent research**, publishing **peer-reviewed articles**, serving as a **scientific reviewer**, and mentoring students. Skilled in leading **end-to-end research pipelines**—from dataset curation to deep learning model development—and collaborating effectively with academia, hospitals, and industry partners.
+      Experienced in independent research, publishing peer-reviewed articles, serving as a scientific reviewer, and mentoring students. Skilled in leading end-to-end research pipelines—from dataset curation to deep learning model development—and collaborating effectively with academia, hospitals, and industry partners.
     skills:
       enable: true
-      title: "Core Expertise:"
+      title: "Research Interests"
       items:
         - "Bioinformatics"
         - "Data Science"
         - "Machine Learning"
         - "AI Drug Discovery"
         - "Precision Medicine"
-        - "Genetic Analysis"
-    
+        - "Genetic Analysis"  
+
+  
+
+  news:
+    enable: true
+    title: "News"
+    items:
+      - date: "2025-07"
+        title: "Actively seeking full-time opportunities where I can apply my expertise in AI-driven bioinformatics, drug discovery, and precision medicine."
+      - date: "2024-05"
+        title: "I began my Ph.D. at the University of Florida College of Pharmacy, focusing on AI-driven drug discovery."
+      - date: "2023-12"
+        title: "I developed an AI antimicrobial peptide development platform during my time at Academia Sinica (2018-2022), which earned the *20th National Innovation Award (Academic Research)* as AI Fleming project."
+      - date: "2023-09"
+        title: "I joined the Genetics, Bioinformatics, and Computational Biology program at Virginia Tech and worked as a research assistant in the Department of Computer Science."
+      - date: "2023-04"
+        title: 'My research "Intelligent De Novo Design of Novel Antimicrobial Peptides against Antibiotic-Resistant Bacteria Strains" was published in the *International Journal of Molecular Sciences*.'
+
+  experience:
+    enable: true
+    title: "Experience"
+    items:
+      - job: "Research Assistant"
+        company: "University of Florida — College of Pharmacy"
+        companyUrl: "https://pharmacy.ufl.edu/"
+        date: "May 2024 – Aug 2025"
+        content: |
+          - Built a cross‑domain multimodal contrastive framework for RNA–ligand affinity, integrating RiNALMo & SMI‑TED LLMs plus 3D structure into CLIP‑based foundation models; Test RMSE 1.68 vs 1.85 benchmark.
+          - Applied biomolecule GNNs (GIGN), 3D-CNNs, and a custom representation module for fine-tuning and transfer learning.
+          - Curated RNA–small molecule datasets (PDB, PDBbind, HARIBOSS); automated ligand-pocket detection, structure‑based clustering (RNA3DB, RMalign), and feature extraction (RDKit, Biopython, PyMOL).
+          - Performed 10M-scale virtual screening (RNAmigos), docking score evaluation (AutoDock Vina), and decoy generation (DeepCoy).
+          - Explored generative AI protein design with RFdiffusion, AlphaFold, and ProteinMPNN.
 
 
+      - job: "Research Assistant"
+        company: "Virginia Tech — Dept of Computer Science"
+        companyUrl: "https://cs.vt.edu/" 
+        date: "Aug 2023 – Apr 2024"
+        content: |
+          - Conducted metagenomic analysis of wastewater treatment plants for ARGs/AMPs using Diamond BLAST, Minimap2, MEGAHIT, MetaSPAdes, Kraken2 and related tools.
+          - Built PathoVF, a pathogen/virulence‑factor predictor using multi‑modal DNA encodings and protein LLMs (ProtBERT, ESM‑1b).
+
+      - job: "Data Scientist"
+        company: "Cathay Financial Holdings — Data Science Lab"
+        companyUrl: "https://www.cathayholdings.com/holdings/eng/home"
+        date: "Dec 2022 – May 2023"
+        content: |
+          - Improved ICU sepsis early‑warning and drug recommendations via Feature Tokenizer Transformer (FT‑Transformer) on EHR data; achieving accuracy 0.915.
+          - Contributed to FinTech AI projects: signature recognition, synthetic banking data (Generative AI), and a federated-learning financial AI agent; deployed at scale on AWS EC2/SageMaker/S3.
+          - Leveraged AWS cloud services for project workflows, including EC2 for scalable compute, SageMaker for model training and deployment, and S3 for secure data storage and retrieval.
+          - Served as instructor for the Cathay General Hospital Data Science Workshop, delivering Python programming and data processing training for hospital staff.
+          - Achieved Bronze (Top 9%) in Kaggle Novozymes Enzyme Stability Prediction Challenge (solo).
+          
+      - job: "Bioinformatics Engineer / Research Assistant"
+        company: "Academia Sinica — Institute of Information Science"
+        companyUrl: "https://www.iis.sinica.edu.tw/en/index.html"
+        date: "Jul 2018 – Dec 2022"
+        content: |
+          - Developed an AI-driven antimicrobial peptide platform; curated datasets and applied CNN, LSTM, Doc2Vec, and WGAN-gp for prediction and generation.
+            -	Designed two peptides with in vitro activity against cancer and antibiotic-resistant bacteria (MIC 2–45 μg/mL).
+            -	Packaged models into AI4AXP web platform (antibacterial, antifungal, anticancer, antivirus, anti-coronavirus, hemolysis).
+            -	Invited to Healthcare+ Expo Taiwan (2021, 2022); won the 20th National Innovation Award (2023) for 'AI Fleming'.
+          - Analyzed Taiwan Biobank genomes; developed DL models for disease phenotypes from SNPs for precision medicine.
+          - Performed GWAS on aquatic species using PLINK, GATK, DeepVariant; transferred patented know-how for aquaculture SNP microarray design.
+          - Supervised four summer interns at Academia Sinica, Institute of Information Science (2019-2022), guiding them to successfully complete their research projects.
+          - Proposed PC6 physicochemical protein encoding; integrated into AI4AMP deep-learning predictor surpassing prior SOTA.
 
 
   # Projects 區塊
@@ -141,13 +220,14 @@ params:
 
   # Contact 區塊
   contact:
-    enable: true
+    enable: false
     content: "My inbox is always open—happy to chat about AI for Bio and collaborations."
     btnName: "Email me"
     btnLink: "mailto:b03601046@gmail.com"
 
   # Footer
   footer:
+    enable: false
     recentPosts:
       path: "blogs"
       count: 3
@@ -157,9 +237,9 @@ params:
     socialNetworks:
       github: https://github.com/LinTzuTang
       linkedin: https://www.linkedin.com/in/tzutang-lin/
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      twitter: 
+      instagram: 
+      facebook: 
 
   listPages:
     disableFeaturedImage: false

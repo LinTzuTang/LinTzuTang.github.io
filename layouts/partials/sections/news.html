@@ -1,0 +1,46 @@
+{{- $news := .Site.Params.news -}}
+{{- if and (reflect.IsMap $news) (isset $news "enable") (index $news "enable") -}}
+<section id="news" class="py-0 py-sm-5">
+  <div class="container bg-transparent">
+    <h3 class="text-center bg-transparent">{{ index $news "title" | default "News" }}</h3>
+
+    <div class="tt-news">
+      {{- $items := index $news "items" -}}
+      {{- if and $items (gt (len $items) 0) -}}
+        {{- $sorted := $items -}}
+        {{- if (and (reflect.IsMap (index $items 0)) (isset (index $items 0) "date")) -}}
+          {{- $sorted = sort $items "date" "desc" -}}
+        {{- end -}}
+
+        <ul class="list-unstyled m-0">
+          {{- range $it := $sorted }}
+            {{- $date := cond (isset $it "date") (index $it "date") "" -}}
+            {{- $title := cond (isset $it "title") (index $it "title") "" -}}
+            {{- $url := cond (isset $it "url") (index $it "url") "" -}}
+            {{- $desc := cond (isset $it "desc") (index $it "desc") "" -}}
+            <li class="mb-2">
+              {{- if $date -}}
+                {{- $ds := $date -}}
+                {{- if eq (len $ds) 7 -}}          {{/* e.g. 2025-08 */}}
+                  {{- $ds = printf "%s-01" $ds -}}
+                {{- else if eq (len $ds) 4 -}}     {{/* e.g. 2025 */}}
+                  {{- $ds = printf "%s-01-01" $ds -}}
+                {{- end -}}
+                <span class="text-muted">{{ time $ds | time.Format "Jan 2006" }} — </span>
+              {{- end -}}
+              {{- if $url -}}
+                <a href="{{ $url }}" target="_blank" rel="noopener">{{ $title | markdownify }}</a>
+              {{- else -}}
+                {{ $title | markdownify }}
+              {{- end -}}
+              {{- if $desc -}}
+                <span class="text-secondary"> — {{ $desc | markdownify }}</span>
+              {{- end -}}
+            </li>
+          {{- end }}
+        </ul>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end -}}
