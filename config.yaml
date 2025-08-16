@@ -29,9 +29,15 @@ menu:
     - name: Experience
       url: /#experience
       weight: 3
+    - name: Education
+      url: /#education
+      weight: 4
+    - name: Tools
+      url: /#tools
+      weight: 5
     - name: Projects
       url: /#projects
-      weight: 4
+      weight: 6
     # - name: Contact
     #   url: /#contact
     #   weight: 5
@@ -132,15 +138,15 @@ params:
     title: "News"
     items:
       - date: "2025-07"
-        title: "Actively seeking full-time opportunities where I can apply my expertise in AI-driven bioinformatics, drug discovery, and precision medicine."
+        title: "`Seeking full-time opportunities` in AI-driven bioinformatics, drug discovery, and precision medicine."
       - date: "2024-05"
-        title: "I began my Ph.D. at the University of Florida College of Pharmacy, focusing on AI-driven drug discovery."
+        title: "Started Ph.D. at the University of Florida College of Pharmacy, focusing on AI-driven drug discovery."
       - date: "2023-12"
-        title: "I developed an AI antimicrobial peptide development platform during my time at Academia Sinica (2018-2022), which earned the *20th National Innovation Award (Academic Research)* as AI Fleming project."
+        title: "Developed AI antimicrobial peptide platform 'AI Fleming' at Academia Sinica (2018–2022), awarded the **20th National Innovation Award**."
       - date: "2023-09"
-        title: "I joined the Genetics, Bioinformatics, and Computational Biology program at Virginia Tech and worked as a research assistant in the Department of Computer Science."
+        title: "Joined Virginia Tech as Research Assistant in Computer Science, enrolled in the Genetics, Bioinformatics, and Computational Biology program."
       - date: "2023-04"
-        title: 'My research "Intelligent De Novo Design of Novel Antimicrobial Peptides against Antibiotic-Resistant Bacteria Strains" was published in the *International Journal of Molecular Sciences*.'
+        title: "Published research **Intelligent De Novo Design of Novel Antimicrobial Peptides against Antibiotic-Resistant Bacteria Strains** in the *International Journal of Molecular Sciences*."
 
   experience:
     enable: true
@@ -191,34 +197,171 @@ params:
           - Supervised four summer interns at Academia Sinica, Institute of Information Science (2019-2022), guiding them to successfully complete their research projects.
           - Proposed PC6 physicochemical protein encoding; integrated into AI4AMP deep-learning predictor surpassing prior SOTA.
 
+  education:
+    enable: true
+    title: "Education"
+    items:
+      - title: "Ph.D. in Pharmaceutical Sciences — Withdrawn"
+        school:
+          name: "University of Florida, College of Pharmacy"
+          url: "https://pharmacy.ufl.edu/"
+        date: "May 2024 – Aug 2025"
+        content: "Focus: AI Drug Discovery (AIDD)"
 
-  # Projects 區塊
+      - title: "B.S. in Agronomy (Specialization in Experimental Design and Biostatistics)"
+        school:
+          name: "National Taiwan University"
+          url: "https://www.ntu.edu.tw/"
+        date: "Sep 2015 – Jun 2019"
+        content: "Awarded Undergraduate Research Fellowship, Ministry of Science and Technology (MOST), Taiwan."
+
+  tools:
+    enable: true
+    title: "Tools"
+    items:
+      - title: "AI4AXP"
+        url: "https://axp.iis.sinica.edu.tw/" 
+        image: "/img/tools/1.png"  
+        desc: "AI4AXP, a user-friendly web platform for predicting peptide activities (antibacterial, antifungal, anticancer, antivirus, anti-coronavirus, hemolysis)."
+        org:
+          name: "Academia Sinica — Institute of Information Science"
+        links:
+          - icon: "fab fa-github"
+            url: "https://github.com/LinTzuTang/AI4AMP_predictor"
+          - icon: "fab fa-github"     
+            url: "https://github.com/LinTzuTang/AI4AVP_predictor"
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/AI4ACP
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/AI4AFP_predictor
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/Hemolysis
+
+      - title: " AI Fleming Introduction Video"
+        url: "https://www.youtube.com/watch?v=Hp0L5yPmmk0" 
+        image: "/img/tools/2.png"  
+        desc: "AI Fleming: Using GAN & AI4AMP To Design, Identify & Validate Novel AMPs."
+        org:
+          name: "Academia Sinica — Institute of Information Science"
+        links:
+          - icon: "fa fa-book"
+            url: "https://doi.org/10.3390/ijms24076788"
+          - icon: "fab fa-github"
+            url: "https://github.com/LinTzuTang/peptide_GAN"
+          
+          
+  # Projects
   projects:
-    enable: false
+    enable: true
+    maxItems: 0
     items:
       - title: Cross-Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity
-        content: Built a CLIP-style framework integrating RNA sequence, ligand SMILES (RiNALMo, SMI-TED), and 3D features; achieved Test RMSE ~1.68 vs 1.85 benchmark.
-        image: /img/projects/rna-ligand.png
-        badges: ["CLIP-style", "GNN", "3D"]
+        content: Cross-domain multimodal contrastive learning framework for RNA–ligand binding affinity prediction, integrating RNA sequences and ligand SMILES embeddings from large language models (LLMs; RiNALMo, SMI-TED) with 3D structural information into a CLIP-based foundation model.
+        image: /img/projects/1.png
+        badges: ["RNA", "Ligand", "CLIP", "LLM"]
         links:
           - icon: fab fa-github
             url: https://github.com/LinTzuTang/RLC-CLIP/tree/main/CoRSA
-      - title: RNA-targeted Virtual Screening & Docking
-        content: Scaled RNAmigos screening to ~10M molecules across 3 RNAs; evaluated with AutoDock Vina; generated decoys with DeepCoy for benchmarking.
-        image: /img/projects/vs.png
-        badges: ["RNAmigos", "Vina", "DeepCoy"]
+
+      - title: AI4AMP — Antimicrobial Peptide Predictor
+        content: Physicochemical encoding + deep learning (CNN/LSTM) for AMP prediction; part of AI-driven peptide platform.
+        image: /img/projects/3.png
+        badges: ["AMP", "CNN", "LSTM", "Web"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/AI4AMP_predictor
+
+      - title: GIGN for RNA–Ligand Binding Affinity
+        content: Fine-tuned Geometric Interaction Graph Neural Network for RNA–ligand interaction modeling.
+        image: /img/projects/4.png
+        badges: ["RNA", "Ligand", "GNN", "GIGN"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/GIGN/tree/main/GIGN
+
+      - title: RLaffinity Inference for RNA–Ligand Binding
+        content: Inference pipeline and utilities adapted for RNA–ligand binding affinity prediction.
+        image: /img/projects/2.jpg
+        badges: ["RNA", "Ligand", "3D-CNN", "Contrastive"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/RLaffinity
+
+      # --- New items below (all use GitHub as primary_link) ---
+      - title: RNA Structure & Ligand Analysis Toolkit
+        content: Utilities for RNA pocket extraction, contact/distance matrices, ligand parsing, and structure processing.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/rna_tools"
+        badges: ["RNA", "Ligand", "RDKit", "Biopython"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/rna_tools
+
+      - title: RNA3DB — Structure Filtering & Clustering
+        content: Curates RNA structures and supports structure-based clustering/splitting for dataset preparation.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/RNA3DB"
+        badges: ["RNA", "Clustering", "Curation", "Dataset"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/RNA3DB
+
+      - title: DeepCoy — Decoy Molecule Generation
+        content: Generates decoy molecules for rigorous benchmarking in structure-based virtual screening.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/DeepCoy/tree/main/examples"
+        badges: ["Decoys", "Virtual Screening", "Cheminformatics", "Benchmarking"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/DeepCoy/tree/main/examples
+
+      - title: RNAmigos2 — RNA-Targeted Virtual Screening
+        content: Large-scale screening pipeline (~10M molecules) across multiple RNA targets; docking/scoring with Vina.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos"
+        badges: ["RNA", "Virtual Screening", "Docking", "Vina"]
         links:
           - icon: fab fa-github
             url: https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos
-      - title: Generative Protein Design
-        content: RFdiffusion for backbone → AlphaFold for structure → ProteinMPNN for sequence; iterative design loop.
-        image: /img/projects/protein.png
-        badges: ["RFdiffusion", "AlphaFold", "ProteinMPNN"]
+
+      - title: AI4AVP — Antiviral Peptide Predictor
+        content: Deep learning with GAN-based data augmentation for antiviral peptide prediction.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/AI4AVP_predictor"
+        badges: ["AVP", "GAN", "Deep Learning", "Prediction"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/cheminformatics/tree/main/RFdiffusion-Protein-Design
+            url: https://github.com/LinTzuTang/AI4AVP_predictor
 
-  # Contact 區塊
+      - title: AI4ACP — Peptide Drugs for Cancer Therapy
+        content: Deep learning models for peptide-based anticancer activity prediction and analysis.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/AI4ACP"
+        badges: ["ACP", "Cancer", "Deep Learning", "Peptides"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/AI4ACP
+
+      - title: Hemolysis Predictor
+        content: ML/DL models for hemolysis risk prediction in peptide/drug design workflows.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/Hemolysis"
+        badges: ["Hemolysis", "Toxicity", "Deep Learning", "Peptides"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/Hemolysis
+
+      - title: RMalign — RNA Structural Alignment
+        content: Tools for RNA 3D structural alignment/superposition to support comparative analyses.
+        image: /img/projects/0.jpg
+        primary_link: "https://github.com/LinTzuTang/RMalign"
+        badges: ["RNA", "Alignment", "3D", "Superposition"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/RMalign
+
+  
+  # Contact
   contact:
     enable: false
     content: "My inbox is always open—happy to chat about AI for Bio and collaborations."

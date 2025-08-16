@@ -62,3 +62,64 @@
 #projects .float-end .btn:focus {
     box-shadow: none !important;
 }
+
+
+#projects .card-head {
+    aspect-ratio: 12 / 7; 
+    overflow: hidden;
+  }
+  
+#projects .card-head > .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: center;
+    display: block;
+  }
+  
+@media (max-width: 576px) {
+    #projects .card-head { aspect-ratio: 4 / 3; }
+  }
+
+
+#projects .badge.badge-secondary.badge-tag[data-tag="RNA"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Ligand"],
+#projects .badge.badge-secondary.badge-tag[data-tag="AMP"],
+#projects .badge.badge-secondary.badge-tag[data-tag="AVP"],
+#projects .badge.badge-secondary.badge-tag[data-tag="ACP"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Peptides"] { background-color:#2e7d32 !important; color:#fff !important; }
+
+#projects .badge.badge-secondary.badge-tag[data-tag="CLIP"],
+#projects .badge.badge-secondary.badge-tag[data-tag="GNN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="CNN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="LSTM"],
+#projects .badge.badge-secondary.badge-tag[data-tag="3D-CNN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="LLM"] { background-color:#3949ab !important; color:#fff !important; }
+
+#projects .badge.badge-secondary.badge-tag[data-tag="3D"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Alignment"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Superposition"],
+#projects .badge.badge-secondary.badge-tag[data-tag="3D Structure"],
+#projects .badge.badge-secondary.badge-tag[data-tag="GIGN"] { background-color:#00897b !important; color:#fff !important; }
+
+#projects .badge.badge-secondary.badge-tag[data-tag="Virtual Screening"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Docking"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Vina"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Decoys"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Benchmarking"] { background-color:#ef6c00 !important; color:#fff !important; }
+
+#projects .badge.badge-secondary.badge-tag[data-tag="RDKit"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Biopython"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Toolkit"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Cheminformatics"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Dataset"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Curation"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Clustering"] { background-color:#546e7a !important; color:#fff !important; }
+
+#projects .badge.badge-secondary.badge-tag[data-tag="Prediction"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Inference"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Web"] { background-color:#455a64 !important; color:#fff !important; }
+
+#projects .badge.badge-secondary.badge-tag[data-tag="Hemolysis"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Toxicity"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Cancer"] { background-color:#c62828 !important; color:#fff !important; }

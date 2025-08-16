@@ -1,0 +1,133 @@
+{{- $tools := .Site.Params.tools -}}
+{{- if and (reflect.IsMap $tools) (isset $tools "enable") (index $tools "enable") -}}
+<section id="tools" class="py-0 py-sm-5">
+  <div class="container bg-transparent">
+    <h3 class="text-center bg-transparent">{{ index $tools "title" | default "Tools" }}</h3>
+
+    {{- $items := index $tools "items" -}}
+    {{- if and $items (gt (len $items) 0) -}}
+      {{- $sorted := $items -}}
+      {{- if (and (reflect.IsMap (index $items 0)) (isset (index $items 0) "order")) -}}
+        {{- $sorted = sort $items "order" "asc" -}}
+      {{- else if (and (reflect.IsMap (index $items 0)) (isset (index $items 0) "date")) -}}
+        {{- $sorted = sort $items "date" "desc" -}}
+      {{- end -}}
+
+      <div class="row justify-content-center mt-3">
+        {{- range $it := $sorted }}
+        <div class="col-12 p-0">
+          <div class="row justify-content-center m-0 mb-3">
+            <div class="col-12 col-md-8 col-lg-6 p-0">
+              <article class="card tt-card border-0 position-relative">
+
+                {{- $img := cond (isset $it "image") (index $it "image") "" -}}
+                {{- if $img }}
+                <div class="ratio ratio-16x9">
+                  <img class="tt-thumb" src="{{ $img | relURL }}" alt="">
+                </div>
+                {{- end }}
+
+                <div class="card-body tt-body">
+                  <div class="float-end">
+                    <small>{{ cond (isset $it "date") (index $it "date") "" }}</small>
+                  </div>
+
+                  <h5 class="card-title tt-title mb-1">{{ cond (isset $it "title") (index $it "title") "" }}</h5>
+
+                  {{- $hasOrg := and (isset $it "org") (reflect.IsMap (index $it "org")) -}}
+                  {{- if $hasOrg -}}
+                    {{- $org := index $it "org" -}}
+                    {{- $orgName := cond (isset $org "name") (index $org "name") "" -}}
+                    {{- $orgUrl  := cond (isset $org "url")  (index $org "url")  "" -}}
+                    {{- if $orgName }}
+                    <div class="mb-1">
+                      {{- if $orgUrl -}}
+                        <a href="{{ $orgUrl }}" target="_blank" rel="noopener"><h6 class="m-0 tt-org">{{ $orgName }}</h6></a>
+                      {{- else -}}
+                        <h6 class="m-0 tt-org">{{ $orgName }}</h6>
+                      {{- end -}}
+                    </div>
+                    {{- end -}}
+                  {{- end -}}
+
+                  {{- with (cond (isset $it "desc") (index $it "desc") "") }}
+                  <div class="education-content py-1 tt-desc">{{ . | markdownify }}</div>
+                  {{- end }}
+
+                  {{- if and (isset $it "links") (reflect.IsSlice (index $it "links")) }}
+                  <div class="pt-1 d-flex gap-3 tt-links">
+                    {{- range (index $it "links") }}
+                      {{- $lurl := cond (isset . "url") (index . "url") "" -}}
+                      {{- $lico := cond (isset . "icon") (index . "icon") "" -}}
+                      {{- if $lurl }}
+                      <a href="{{ $lurl }}" target="_blank" rel="noopener" class="text-decoration-none">
+                        <i class="{{ $lico }}"></i>
+                      </a>
+                      {{- end }}
+                    {{- end }}
+                  </div>
+                  {{- end }}
+                </div>
+
+                {{- with (cond (isset $it "url") (index $it "url") "") }}
+                <a href="{{ . }}" target="_blank" rel="noopener" class="stretched-link" aria-label="{{ index $it "title" }}"></a>
+                {{- end }}
+              </article>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    {{- end }}
+  </div>
+
+  <style>
+    /* 標題色與 NEWS 一致（light/dark） */
+    body:not(.dark) #tools h3{
+      -webkit-text-fill-color: var(--text-secondary-color) !important;
+      color: var(--text-secondary-color) !important;
+    }
+    body.dark #tools h3{
+      -webkit-text-fill-color: var(--text-secondary-color-dark) !important;
+      color: var(--text-secondary-color-dark) !important;
+    }
+
+    /* 卡片：半透明、細邊、縮小內距與字級 */
+    #tools .tt-card{
+      background-color: transparent !important;
+      border: 1px solid rgba(255,255,255,.12) !important;
+      border-radius: 8px;
+      box-shadow: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    #tools .tt-card:hover{
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.22) !important;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.08);
+    }
+
+    #tools .tt-body{ padding: .75rem 1rem; } /* 比預設更小 */
+
+    #tools .tt-thumb{
+      width: 100%; height: 100%; object-fit: cover;
+      border-top-left-radius: 8px; border-top-right-radius: 8px;
+    }
+
+    #tools .tt-title{ font-size: 1rem; font-weight: 600; }
+    #tools .tt-org{ font-size: .9rem; }
+    #tools .tt-desc{ font-size: .95rem; }
+
+    /* 讓內部 icon 連結能點（在 stretched-link 之上） */
+    #tools .tt-links a{ position: relative; z-index: 2; }
+
+    /* Light mode 對比 */
+    body:not(.dark) #tools .tt-card{
+      border-color: rgba(0,0,0,.08) !important;
+    }
+    body:not(.dark) #tools .tt-card:hover{
+      border-color: rgba(0,0,0,.16) !important;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.06);
+    }
+  </style>
+</section>
+{{- end -}}
