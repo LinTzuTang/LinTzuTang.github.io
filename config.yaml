@@ -138,7 +138,7 @@ params:
     title: "News"
     items:
       - date: "2025-07"
-        title: "`Seeking full-time opportunities` in AI-driven bioinformatics, drug discovery, and precision medicine."
+        title: "**`Seeking full-time opportunities`** in AI-driven bioinformatics, drug discovery, and precision medicine."
       - date: "2024-05"
         title: "Started Ph.D. at the University of Florida College of Pharmacy, focusing on AI-driven drug discovery."
       - date: "2023-12"
