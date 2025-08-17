@@ -367,7 +367,7 @@ params:
     # email: "b03601046@gmail.com"   
     formspree:
       enable: true
-      formId: "mblkegzl" 
+      formId: "f/mblkegzl" 
 
   # Footer
   footer:
