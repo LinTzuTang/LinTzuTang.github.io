@@ -286,6 +286,16 @@ Tzu-Tang Lin (林子棠)
                     </li>
                     
                     
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact" title="">
+                            
+                            Contact
+                        </a>
+                    </li>
+                    
+                    
 
                     
                     <li class="nav-item navbar-text">
@@ -776,7 +786,11 @@ Tzu-Tang Lin (林子棠)
     </div>
 </section>
 
-<section id="tools" class="py-0 py-sm-5">
+
+<style>
+    #education .card,
+    #education .card-body { border:0 !important;}
+</style><section id="tools" class="py-0 py-sm-5">
   <div class="container bg-transparent">
     <h3 class="text-center bg-transparent">Tools</h3><div class="row justify-content-center mt-3">
         <div class="col-12 p-0">
@@ -794,7 +808,7 @@ Tzu-Tang Lin (林子棠)
 
                   <h5 class="card-title tt-title mb-1">AI4AXP</h5>
                     <div class="mb-1"><h6 class="m-0 tt-org">Academia Sinica — Institute of Information Science</h6></div>
-                  <div class="education-content py-1 tt-desc">AI4AXP, a user-friendly web platform for predicting peptide activities (antibacterial, antifungal, anticancer, antivirus, anti-coronavirus, hemolysis).</div>
+                  <div class="education-content py-1 tt-desc">AI4AXP, a user-friendly web platform for predicting peptide activities (antibacterial, antifungal, anticancer, antivirus, hemolysis).</div>
                   <div class="pt-1 d-flex gap-3 tt-links">
                       <a href="https://github.com/LinTzuTang/AI4AMP_predictor" target="_blank" rel="noopener" class="text-decoration-none">
                         <i class="fab fa-github"></i>
@@ -833,13 +847,19 @@ Tzu-Tang Lin (林子棠)
 
                   <h5 class="card-title tt-title mb-1"> AI Fleming Introduction Video</h5>
                     <div class="mb-1"><h6 class="m-0 tt-org">Academia Sinica — Institute of Information Science</h6></div>
-                  <div class="education-content py-1 tt-desc">AI Fleming: Using GAN &amp; AI4AMP To Design, Identify &amp; Validate Novel AMPs.</div>
+                  <div class="education-content py-1 tt-desc">AI Fleming: a generative-plus-predictive AMP platform using GANs and AI4AMP to design, identify, and validate new candidates.</div>
                   <div class="pt-1 d-flex gap-3 tt-links">
                       <a href="https://doi.org/10.3390/ijms24076788" target="_blank" rel="noopener" class="text-decoration-none">
                         <i class="fa fa-book"></i>
                       </a>
+                      <a href="https://github.com/lsbnb/amp_gan" target="_blank" rel="noopener" class="text-decoration-none">
+                        <i class="fab fa-github"></i>
+                      </a>
                       <a href="https://github.com/LinTzuTang/peptide_GAN" target="_blank" rel="noopener" class="text-decoration-none">
                         <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://innoaward.taiwan-healthcare.org/award_detail.php?REFDOCID=0s6o31brtuaelkpn" target="_blank" rel="noopener" class="text-decoration-none">
+                        <i class="fas fa-award"></i>
                       </a>
                   </div>
                 </div>
@@ -923,7 +943,7 @@ Tzu-Tang Lin (林子棠)
                role="link"
                tabindex="0"
                style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/RLC-CLIP\/tree\/main\/CoRSA'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/RLC-CLIP\/tree\/main\/CoRSA'}">
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/RLC-CLIP'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/RLC-CLIP'}">
             <div class="card-head">
               <img class="card-img-top" src="/img/projects/1.png" alt="Cross-Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity" loading="lazy" decoding="async">
             </div>
@@ -938,10 +958,14 @@ Tzu-Tang Lin (林子棠)
                 
                     <span class="badge badge-secondary badge-tag" data-tag="LLM">LLM</span>
                 
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Prediction">Prediction</span>
+                
               </div>
               <h5 class="card-title bg-transparent mt-1">Cross-Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity</h5>
               <div class="card-text bg-transparent secondary-font">
-                Cross-domain multimodal contrastive learning framework for RNA–ligand binding affinity prediction, integrating RNA sequences and ligand SMILES embeddings from large language models (LLMs; RiNALMo, SMI-TED) with 3D structural information into a CLIP-based foundation model.
+                CLIP-style cross-modal foundation model integrating RNA sequences, LLM SMILES (RiNALMo/SMI-TED), and 3D features for RNA–small-molecule affinity; supports downstream fine-tuning.
               </div>
             </div>
 
@@ -949,7 +973,380 @@ Tzu-Tang Lin (林子棠)
               <div class="card-footer py-3">
                 
                   <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/RLC-CLIP/tree/main/CoRSA" target="_blank" onclick="event.stopPropagation();">
+                    <a href="https://github.com/LinTzuTang/RLC-CLIP" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="GIGN for RNA–Ligand Binding Affinity"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/GIGN'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/GIGN'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/4.png" alt="GIGN for RNA–Ligand Binding Affinity" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="GNN">GNN</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="GIGN">GIGN</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Benchmarking">Benchmarking</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Prediction">Prediction</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">GIGN for RNA–Ligand Binding Affinity</h5>
+              <div class="card-text bg-transparent secondary-font">
+                Fine-tuned/retrained Geometric Interaction Graph Neural Network (GIGN) for RNA–ligand interaction modeling with packaged training/inference.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/GIGN" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="Sepsis Early Prediction with FT Transformer (CGH)"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/tabular_data_modeling'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/tabular_data_modeling'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/7.png" alt="Sepsis Early Prediction with FT Transformer (CGH)" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Healthcare">Healthcare</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="EHR">EHR</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Transformer">Transformer</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Pipeline">Pipeline</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Prediction">Prediction</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">Sepsis Early Prediction with FT Transformer (CGH)</h5>
+              <div class="card-text bg-transparent secondary-font">
+                EHR-based early sepsis prediction prototype using FT Transformer—data processing → featurization → training/evaluation; reproducible notebooks &amp; scripts.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/tabular_data_modeling" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="RLaffinity — 3D-CNN Contrastive Inference"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/RLaffinity'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/RLaffinity'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/2.jpg" alt="RLaffinity — 3D-CNN Contrastive Inference" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="3D-CNN">3D-CNN</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Contrastive">Contrastive</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Benchmarking">Benchmarking</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Prediction">Prediction</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">RLaffinity — 3D-CNN Contrastive Inference</h5>
+              <div class="card-text bg-transparent secondary-font">
+                Reproducible inference &amp; retraining workflow for a 3D-CNN contrastive model on nucleic acid–ligand binding; scripts for data prep and evaluation.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/RLaffinity" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="Hariboss Processing &amp; Pocket Extraction"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/hariboss'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/hariboss'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/0.jpg" alt="Hariboss Processing &amp; Pocket Extraction" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Bash">Bash</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Pipeline">Pipeline</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Dataset">Dataset</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">Hariboss Processing &amp; Pocket Extraction</h5>
+              <div class="card-text bg-transparent secondary-font">
+                Hariboss cleaning, RNA/ligand splitting, and pocket extraction; SLURM batch for HPC and integration with RNA3DB.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/hariboss" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/pockets" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="PDBbind RNA–Ligand Processing Pipeline"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/pdbbind'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/pdbbind'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/0.jpg" alt="PDBbind RNA–Ligand Processing Pipeline" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Bash">Bash</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Pipeline">Pipeline</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Dataset">Dataset</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">PDBbind RNA–Ligand Processing Pipeline</h5>
+              <div class="card-text bg-transparent secondary-font">
+                Batch download/parse from PDBbind NL, RNA chain &amp; ligand extraction, format conversions, and sequence export for training/pocket maps.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/pdbbind" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="DeepCoy — Property-Matched Decoy Generation"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/DeepCoy\/tree\/main\/examples'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/DeepCoy\/tree\/main\/examples'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/9.png" alt="DeepCoy — Property-Matched Decoy Generation" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Decoys">Decoys</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Benchmarking">Benchmarking</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Dataset">Dataset</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">DeepCoy — Property-Matched Decoy Generation</h5>
+              <div class="card-text bg-transparent secondary-font">
+                Automated decoy generation for benchmarking/model evaluation; runnable examples, training/eval scripts, and pretrained pointers.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/DeepCoy/tree/main/examples" target="_blank" onclick="event.stopPropagation();">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </span>
+                
+                
+              </div>
+            
+          </div>
+        </div>
+      
+        
+        
+        
+          
+        
+
+        <div class="col-lg-4 col-md-6 my-3">
+          <div class="card my-3 h-100"
+               title="RNA &amp; Molecular Analysis Toolkit"
+               role="link"
+               tabindex="0"
+               style="cursor:pointer"
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/rna_tools'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/rna_tools'}">
+            <div class="card-head">
+              <img class="card-img-top" src="/img/projects/0.jpg" alt="RNA &amp; Molecular Analysis Toolkit" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body bg-transparent p-3">
+              <div class="pb-2 bg-transparent">
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Toolkit">Toolkit</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="RDKit">RDKit</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+              </div>
+              <h5 class="card-title bg-transparent mt-1">RNA &amp; Molecular Analysis Toolkit</h5>
+              <div class="card-text bg-transparent secondary-font">
+                Handy scripts (RDKit/Biopython/PyMOL) for RNA–ligand analysis—fingerprints, distance/contact maps, and inter-format conversions.
+              </div>
+            </div>
+
+            
+              <div class="card-footer py-3">
+                
+                  <span class="m-1 mx-2">
+                    <a href="https://github.com/LinTzuTang/rna_tools" target="_blank" onclick="event.stopPropagation();">
                       <i class="fab fa-github"></i>
                     </a>
                   </span>
@@ -979,18 +1376,24 @@ Tzu-Tang Lin (林子棠)
             <div class="card-body bg-transparent p-3">
               <div class="pb-2 bg-transparent">
                 
+                    <span class="badge badge-secondary badge-tag" data-tag="Peptides">Peptides</span>
+                
                     <span class="badge badge-secondary badge-tag" data-tag="AMP">AMP</span>
                 
                     <span class="badge badge-secondary badge-tag" data-tag="CNN">CNN</span>
                 
                     <span class="badge badge-secondary badge-tag" data-tag="LSTM">LSTM</span>
                 
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
                     <span class="badge badge-secondary badge-tag" data-tag="Web">Web</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Prediction">Prediction</span>
                 
               </div>
               <h5 class="card-title bg-transparent mt-1">AI4AMP — Antimicrobial Peptide Predictor</h5>
               <div class="card-text bg-transparent secondary-font">
-                Physicochemical encoding &#43; deep learning (CNN/LSTM) for AMP prediction; part of AI-driven peptide platform.
+                PC6 encoding &#43; CNN/LSTM for antimicrobial peptide prediction; CLI &#43; quick demo &#43; web workflow.
               </div>
             </div>
 
@@ -1017,323 +1420,33 @@ Tzu-Tang Lin (林子棠)
 
         <div class="col-lg-4 col-md-6 my-3">
           <div class="card my-3 h-100"
-               title="GIGN for RNA–Ligand Binding Affinity"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/GIGN\/tree\/main\/GIGN'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/GIGN\/tree\/main\/GIGN'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/4.png" alt="GIGN for RNA–Ligand Binding Affinity" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="GNN">GNN</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="GIGN">GIGN</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">GIGN for RNA–Ligand Binding Affinity</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Fine-tuned Geometric Interaction Graph Neural Network for RNA–ligand interaction modeling.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/GIGN/tree/main/GIGN" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
-               title="RLaffinity Inference for RNA–Ligand Binding"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/RLaffinity'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/RLaffinity'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/2.jpg" alt="RLaffinity Inference for RNA–Ligand Binding" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="3D-CNN">3D-CNN</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Contrastive">Contrastive</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">RLaffinity Inference for RNA–Ligand Binding</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Inference pipeline and utilities adapted for RNA–ligand binding affinity prediction.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/RLaffinity" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
-               title="RNA Structure &amp; Ligand Analysis Toolkit"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/rna_tools'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/rna_tools'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="RNA Structure &amp; Ligand Analysis Toolkit" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Ligand">Ligand</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RDKit">RDKit</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Biopython">Biopython</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">RNA Structure &amp; Ligand Analysis Toolkit</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Utilities for RNA pocket extraction, contact/distance matrices, ligand parsing, and structure processing.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/rna_tools" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
-               title="RNA3DB — Structure Filtering &amp; Clustering"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/RNA3DB'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/RNA3DB'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="RNA3DB — Structure Filtering &amp; Clustering" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Clustering">Clustering</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Curation">Curation</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Dataset">Dataset</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">RNA3DB — Structure Filtering &amp; Clustering</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Curates RNA structures and supports structure-based clustering/splitting for dataset preparation.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/RNA3DB" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
-               title="DeepCoy — Decoy Molecule Generation"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/DeepCoy\/tree\/main\/examples'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/DeepCoy\/tree\/main\/examples'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="DeepCoy — Decoy Molecule Generation" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Decoys">Decoys</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Virtual Screening">Virtual Screening</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Cheminformatics">Cheminformatics</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Benchmarking">Benchmarking</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">DeepCoy — Decoy Molecule Generation</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Generates decoy molecules for rigorous benchmarking in structure-based virtual screening.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/DeepCoy/tree/main/examples" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
-               title="RNAmigos2 — RNA-Targeted Virtual Screening"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/rnamigo2\/tree\/main\/rnamigos'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/rnamigo2\/tree\/main\/rnamigos'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="RNAmigos2 — RNA-Targeted Virtual Screening" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Virtual Screening">Virtual Screening</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Docking">Docking</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Vina">Vina</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">RNAmigos2 — RNA-Targeted Virtual Screening</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Large-scale screening pipeline (~10M molecules) across multiple RNA targets; docking/scoring with Vina.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
                title="AI4AVP — Antiviral Peptide Predictor"
                role="link"
                tabindex="0"
                style="cursor:pointer"
                onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/AI4AVP_predictor'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/AI4AVP_predictor'}">
             <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="AI4AVP — Antiviral Peptide Predictor" loading="lazy" decoding="async">
+              <img class="card-img-top" src="/img/projects/8.png" alt="AI4AVP — Antiviral Peptide Predictor" loading="lazy" decoding="async">
             </div>
             <div class="card-body bg-transparent p-3">
               <div class="pb-2 bg-transparent">
                 
+                    <span class="badge badge-secondary badge-tag" data-tag="Peptides">Peptides</span>
+                
                     <span class="badge badge-secondary badge-tag" data-tag="AVP">AVP</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="GAN">GAN</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="CNN">CNN</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Deep Learning">Deep Learning</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
+                
+                    <span class="badge badge-secondary badge-tag" data-tag="Web">Web</span>
                 
                     <span class="badge badge-secondary badge-tag" data-tag="Prediction">Prediction</span>
                 
               </div>
               <h5 class="card-title bg-transparent mt-1">AI4AVP — Antiviral Peptide Predictor</h5>
               <div class="card-text bg-transparent secondary-font">
-                Deep learning with GAN-based data augmentation for antiviral peptide prediction.
+                PC6 &#43; CNN with GAN-based data augmentation for antiviral peptide prediction; demo scripts and training code.
               </div>
             </div>
 
@@ -1360,29 +1473,29 @@ Tzu-Tang Lin (林子棠)
 
         <div class="col-lg-4 col-md-6 my-3">
           <div class="card my-3 h-100"
-               title="AI4ACP — Peptide Drugs for Cancer Therapy"
+               title="Cheminformatics &amp; Molecular DB Playbook"
                role="link"
                tabindex="0"
                style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/AI4ACP'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/AI4ACP'}">
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/cheminformatics'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/cheminformatics'}">
             <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="AI4ACP — Peptide Drugs for Cancer Therapy" loading="lazy" decoding="async">
+              <img class="card-img-top" src="/img/projects/0.jpg" alt="Cheminformatics &amp; Molecular DB Playbook" loading="lazy" decoding="async">
             </div>
             <div class="card-body bg-transparent p-3">
               <div class="pb-2 bg-transparent">
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="ACP">ACP</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Protein">Protein</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Cancer">Cancer</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="RDKit">RDKit</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Deep Learning">Deep Learning</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Peptides">Peptides</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Tutorial">Tutorial</span>
                 
               </div>
-              <h5 class="card-title bg-transparent mt-1">AI4ACP — Peptide Drugs for Cancer Therapy</h5>
+              <h5 class="card-title bg-transparent mt-1">Cheminformatics &amp; Molecular DB Playbook</h5>
               <div class="card-text bg-transparent secondary-font">
-                Deep learning models for peptide-based anticancer activity prediction and analysis.
+                From RDKit basics and MolDB exploration/screening to protein design (RFdiffusion &#43; ProteinMPNN &#43; AlphaFold) in one tutorial set.
               </div>
             </div>
 
@@ -1390,7 +1503,7 @@ Tzu-Tang Lin (林子棠)
               <div class="card-footer py-3">
                 
                   <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/AI4ACP" target="_blank" onclick="event.stopPropagation();">
+                    <a href="https://github.com/LinTzuTang/cheminformatics" target="_blank" onclick="event.stopPropagation();">
                       <i class="fab fa-github"></i>
                     </a>
                   </span>
@@ -1409,29 +1522,29 @@ Tzu-Tang Lin (林子棠)
 
         <div class="col-lg-4 col-md-6 my-3">
           <div class="card my-3 h-100"
-               title="Hemolysis Predictor"
+               title="CGH Data Science Workshop (Teaching)"
                role="link"
                tabindex="0"
                style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/Hemolysis'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/Hemolysis'}">
+               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/cgh_data_science_workshop'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/cgh_data_science_workshop'}">
             <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="Hemolysis Predictor" loading="lazy" decoding="async">
+              <img class="card-img-top" src="/img/projects/0.jpg" alt="CGH Data Science Workshop (Teaching)" loading="lazy" decoding="async">
             </div>
             <div class="card-body bg-transparent p-3">
               <div class="pb-2 bg-transparent">
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Hemolysis">Hemolysis</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Healthcare">Healthcare</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Toxicity">Toxicity</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Python">Python</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Deep Learning">Deep Learning</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Tutorial">Tutorial</span>
                 
-                    <span class="badge badge-secondary badge-tag" data-tag="Peptides">Peptides</span>
+                    <span class="badge badge-secondary badge-tag" data-tag="Workshop">Workshop</span>
                 
               </div>
-              <h5 class="card-title bg-transparent mt-1">Hemolysis Predictor</h5>
+              <h5 class="card-title bg-transparent mt-1">CGH Data Science Workshop (Teaching)</h5>
               <div class="card-text bg-transparent secondary-font">
-                ML/DL models for hemolysis risk prediction in peptide/drug design workflows.
+                Hospital-oriented Python/Data Science materials (data processing, EDA, feature engineering, modeling &amp; evaluation) with hands-on notebooks.
               </div>
             </div>
 
@@ -1439,56 +1552,7 @@ Tzu-Tang Lin (林子棠)
               <div class="card-footer py-3">
                 
                   <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/Hemolysis" target="_blank" onclick="event.stopPropagation();">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </span>
-                
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        
-        
-        
-          
-        
-
-        <div class="col-lg-4 col-md-6 my-3">
-          <div class="card my-3 h-100"
-               title="RMalign — RNA Structural Alignment"
-               role="link"
-               tabindex="0"
-               style="cursor:pointer"
-               onclick="window.location.href='https:\/\/github.com\/LinTzuTang\/RMalign'" onkeypress="if(event.key==='Enter'){window.location.href='https:\/\/github.com\/LinTzuTang\/RMalign'}">
-            <div class="card-head">
-              <img class="card-img-top" src="/img/projects/0.jpg" alt="RMalign — RNA Structural Alignment" loading="lazy" decoding="async">
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <div class="pb-2 bg-transparent">
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="RNA">RNA</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Alignment">Alignment</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="3D">3D</span>
-                
-                    <span class="badge badge-secondary badge-tag" data-tag="Superposition">Superposition</span>
-                
-              </div>
-              <h5 class="card-title bg-transparent mt-1">RMalign — RNA Structural Alignment</h5>
-              <div class="card-text bg-transparent secondary-font">
-                Tools for RNA 3D structural alignment/superposition to support comparative analyses.
-              </div>
-            </div>
-
-            
-              <div class="card-footer py-3">
-                
-                  <span class="m-1 mx-2">
-                    <a href="https://github.com/LinTzuTang/RMalign" target="_blank" onclick="event.stopPropagation();">
+                    <a href="https://github.com/LinTzuTang/cgh_data_science_workshop" target="_blank" onclick="event.stopPropagation();">
                       <i class="fab fa-github"></i>
                     </a>
                   </span>
@@ -1504,6 +1568,37 @@ Tzu-Tang Lin (林子棠)
   </div>
 </section>
 
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get in Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Always happy to connect — feel free to reach out about potential collaborations
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <form id="contact-form" action="https://formspree.io/f/mblkegzl" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                            <div class="form-group pt-3">
+                                <input type="email" class="form-control"  name="email" required="true" placeholder='Enter your email'>
+                            </div>
+                            <div class="form-group pt-3">
+                                <textarea class="form-control" name="message" required="true" placeholder='Enter your message' rows="3"></textarea>
+                            </div>
+                            <div class="form-group text-center pt-3">
+                                <button type="submit" class="btn">Email me</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
 
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -1580,7 +1675,7 @@ Tzu-Tang Lin (林子棠)
                     </a>
                 </div>
             
-            &copy; 2025  All rights reserved
+            &copy; 2025  Tzu-Tang Lin. All rights reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -1629,6 +1724,8 @@ Tzu-Tang Lin (林子棠)
 
 
 
+
+<script src="/js/contact.js"></script>
 
 
 

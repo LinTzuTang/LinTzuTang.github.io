@@ -82,44 +82,57 @@
   }
 
 
+/* 1) Domain / Biology (green) */
 #projects .badge.badge-secondary.badge-tag[data-tag="RNA"],
 #projects .badge.badge-secondary.badge-tag[data-tag="Ligand"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Peptides"],
 #projects .badge.badge-secondary.badge-tag[data-tag="AMP"],
 #projects .badge.badge-secondary.badge-tag[data-tag="AVP"],
-#projects .badge.badge-secondary.badge-tag[data-tag="ACP"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Peptides"] { background-color:#2e7d32 !important; color:#fff !important; }
+#projects .badge.badge-secondary.badge-tag[data-tag="Protein"],
+#projects .badge.badge-secondary.badge-tag[data-tag="EHR"],
+#projects .badge.badge-secondary.badge-tag[data-tag="CGH"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Healthcare"] {
+  background-color:#2e7d32 !important; color:#fff !important;
+}
 
+/* 2) DL / ML techniques (indigo) */
 #projects .badge.badge-secondary.badge-tag[data-tag="CLIP"],
+#projects .badge.badge-secondary.badge-tag[data-tag="LLM"],
 #projects .badge.badge-secondary.badge-tag[data-tag="GNN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="GIGN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="3D-CNN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Contrastive"],
 #projects .badge.badge-secondary.badge-tag[data-tag="CNN"],
 #projects .badge.badge-secondary.badge-tag[data-tag="LSTM"],
-#projects .badge.badge-secondary.badge-tag[data-tag="3D-CNN"],
-#projects .badge.badge-secondary.badge-tag[data-tag="LLM"] { background-color:#3949ab !important; color:#fff !important; }
+#projects .badge.badge-secondary.badge-tag[data-tag="GAN"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Transformer"] {
+  background-color:#3949ab !important; color:#fff !important;
+}
 
-#projects .badge.badge-secondary.badge-tag[data-tag="3D"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Alignment"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Superposition"],
-#projects .badge.badge-secondary.badge-tag[data-tag="3D Structure"],
-#projects .badge.badge-secondary.badge-tag[data-tag="GIGN"] { background-color:#00897b !important; color:#fff !important; }
-
+/* 3) Screening / Evaluation (orange) */
 #projects .badge.badge-secondary.badge-tag[data-tag="Virtual Screening"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Docking"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Vina"],
 #projects .badge.badge-secondary.badge-tag[data-tag="Decoys"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Benchmarking"] { background-color:#ef6c00 !important; color:#fff !important; }
+#projects .badge.badge-secondary.badge-tag[data-tag="Benchmarking"] {
+  background-color:#ef6c00 !important; color:#fff !important;
+}
 
+/* 4) Code / Tooling (blue) — 改色 */
+#projects .badge.badge-secondary.badge-tag[data-tag="Python"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Bash"],
 #projects .badge.badge-secondary.badge-tag[data-tag="RDKit"],
 #projects .badge.badge-secondary.badge-tag[data-tag="Biopython"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Toolkit"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Cheminformatics"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Dataset"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Curation"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Clustering"] { background-color:#546e7a !important; color:#fff !important; }
+#projects .badge.badge-secondary.badge-tag[data-tag="Toolkit"] {
+  background-color:#1e88e5 !important; color:#fff !important; /* Blue 600 */
+}
 
+/* 5) Workflow / Output (brown) — 改色 + 加上 Web */
+#projects .badge.badge-secondary.badge-tag[data-tag="Dataset"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Pipeline"],
 #projects .badge.badge-secondary.badge-tag[data-tag="Prediction"],
 #projects .badge.badge-secondary.badge-tag[data-tag="Inference"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Web"] { background-color:#455a64 !important; color:#fff !important; }
-
-#projects .badge.badge-secondary.badge-tag[data-tag="Hemolysis"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Toxicity"],
-#projects .badge.badge-secondary.badge-tag[data-tag="Cancer"] { background-color:#c62828 !important; color:#fff !important; }
+#projects .badge.badge-secondary.badge-tag[data-tag="Visualization"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Tutorial"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Workshop"],
+#projects .badge.badge-secondary.badge-tag[data-tag="Web"] {
+  background-color:#6d4c41 !important; color:#fff !important; /* Brown 600 */
+}

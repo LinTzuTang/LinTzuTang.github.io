@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on Tzu-Tang Lin (林子棠)</title>
+    <link>http://localhost:1313/tags/personal/</link>
+    <description>Recent content in Personal on Tzu-Tang Lin (林子棠)</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog Post</title>
+      <link>http://localhost:1313/blogs/first-post/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/first-post/</guid>
+      <description>&lt;p&gt;Welcome to my blog! 🎉&lt;/p&gt;&#xA;&lt;p&gt;This is my first post using &lt;strong&gt;Hugo Profile&lt;/strong&gt;.&lt;br&gt;&#xA;Here I’ll be sharing updates on my research, side projects, and thoughts on AI for Bioinformatics &amp;amp; Drug Discovery.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-what-you-can-expect&#34;&gt;✨ What you can expect&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Short notes on &lt;strong&gt;AI × Biomedicine&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Tips on &lt;strong&gt;bioinformatics tools&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Reflections from &lt;strong&gt;projects &amp;amp; collaborations&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Sometimes, just &lt;strong&gt;personal thoughts&lt;/strong&gt; 🌱&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Stay tuned—more to come soon 🚀&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -38,9 +38,9 @@ menu:
     - name: Projects
       url: /#projects
       weight: 6
-    # - name: Contact
-    #   url: /#contact
-    #   weight: 5
+    - name: Contact
+      url: /#contact
+      weight: 7
     # - identifier: blog
     #   name: Blog
     #   title: Blog posts
@@ -222,7 +222,7 @@ params:
       - title: "AI4AXP"
         url: "https://axp.iis.sinica.edu.tw/" 
         image: "/img/tools/1.png"  
-        desc: "AI4AXP, a user-friendly web platform for predicting peptide activities (antibacterial, antifungal, anticancer, antivirus, anti-coronavirus, hemolysis)."
+        desc: "AI4AXP, a user-friendly web platform for predicting peptide activities (antibacterial, antifungal, anticancer, antivirus, hemolysis)."
         org:
           name: "Academia Sinica — Institute of Information Science"
         links:
@@ -240,15 +240,19 @@ params:
       - title: " AI Fleming Introduction Video"
         url: "https://www.youtube.com/watch?v=Hp0L5yPmmk0" 
         image: "/img/tools/2.png"  
-        desc: "AI Fleming: Using GAN & AI4AMP To Design, Identify & Validate Novel AMPs."
+        desc: "AI Fleming: a generative-plus-predictive AMP platform using GANs and AI4AMP to design, identify, and validate new candidates."
         org:
           name: "Academia Sinica — Institute of Information Science"
         links:
           - icon: "fa fa-book"
             url: "https://doi.org/10.3390/ijms24076788"
           - icon: "fab fa-github"
+            url: "https://github.com/lsbnb/amp_gan"
+          - icon: "fab fa-github"
             url: "https://github.com/LinTzuTang/peptide_GAN"
-          
+          - icon: "fas fa-award"
+            url: "https://innoaward.taiwan-healthcare.org/award_detail.php?REFDOCID=0s6o31brtuaelkpn"
+            
           
   # Projects
   projects:
@@ -256,117 +260,114 @@ params:
     maxItems: 0
     items:
       - title: Cross-Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity
-        content: Cross-domain multimodal contrastive learning framework for RNA–ligand binding affinity prediction, integrating RNA sequences and ligand SMILES embeddings from large language models (LLMs; RiNALMo, SMI-TED) with 3D structural information into a CLIP-based foundation model.
+        content: CLIP-style cross-modal foundation model integrating RNA sequences, LLM SMILES (RiNALMo/SMI-TED), and 3D features for RNA–small-molecule affinity; supports downstream fine-tuning.
         image: /img/projects/1.png
-        badges: ["RNA", "Ligand", "CLIP", "LLM"]
+        badges: ["RNA","Ligand","CLIP","LLM","Python","Prediction"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/RLC-CLIP/tree/main/CoRSA
-
-      - title: AI4AMP — Antimicrobial Peptide Predictor
-        content: Physicochemical encoding + deep learning (CNN/LSTM) for AMP prediction; part of AI-driven peptide platform.
-        image: /img/projects/3.png
-        badges: ["AMP", "CNN", "LSTM", "Web"]
-        links:
-          - icon: fab fa-github
-            url: https://github.com/LinTzuTang/AI4AMP_predictor
+            url: https://github.com/LinTzuTang/RLC-CLIP
 
       - title: GIGN for RNA–Ligand Binding Affinity
-        content: Fine-tuned Geometric Interaction Graph Neural Network for RNA–ligand interaction modeling.
+        content: Fine-tuned/retrained Geometric Interaction Graph Neural Network (GIGN) for RNA–ligand interaction modeling with packaged training/inference.
         image: /img/projects/4.png
-        badges: ["RNA", "Ligand", "GNN", "GIGN"]
+        badges: ["RNA","Ligand","GNN","GIGN","Python","Benchmarking","Prediction"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/GIGN/tree/main/GIGN
+            url: https://github.com/LinTzuTang/GIGN
 
-      - title: RLaffinity Inference for RNA–Ligand Binding
-        content: Inference pipeline and utilities adapted for RNA–ligand binding affinity prediction.
+      - title: Sepsis Early Prediction with FT Transformer (CGH)
+        content: EHR-based early sepsis prediction prototype using FT Transformer—data processing → featurization → training/evaluation; reproducible notebooks & scripts.
+        image: /img/projects/7.png
+        badges: ["Healthcare","EHR","Transformer","Python","Pipeline","Prediction"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/tabular_data_modeling
+
+      - title: RLaffinity — 3D-CNN Contrastive Inference
+        content: Reproducible inference & retraining workflow for a 3D-CNN contrastive model on nucleic acid–ligand binding; scripts for data prep and evaluation.
         image: /img/projects/2.jpg
-        badges: ["RNA", "Ligand", "3D-CNN", "Contrastive"]
+        badges: ["RNA","Ligand","3D-CNN","Contrastive","Python","Benchmarking","Prediction"]
         links:
           - icon: fab fa-github
             url: https://github.com/LinTzuTang/RLaffinity
 
-      # --- New items below (all use GitHub as primary_link) ---
-      - title: RNA Structure & Ligand Analysis Toolkit
-        content: Utilities for RNA pocket extraction, contact/distance matrices, ligand parsing, and structure processing.
+      - title: Hariboss Processing & Pocket Extraction
+        content: Hariboss cleaning, RNA/ligand splitting, and pocket extraction; SLURM batch for HPC and integration with RNA3DB.
         image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/rna_tools"
-        badges: ["RNA", "Ligand", "RDKit", "Biopython"]
+        badges: ["RNA","Ligand","Bash","Pipeline","Dataset"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/rna_tools
+            url: https://github.com/LinTzuTang/hariboss
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/pockets
 
-      - title: RNA3DB — Structure Filtering & Clustering
-        content: Curates RNA structures and supports structure-based clustering/splitting for dataset preparation.
+      - title: PDBbind RNA–Ligand Processing Pipeline
+        content: Batch download/parse from PDBbind NL, RNA chain & ligand extraction, format conversions, and sequence export for training/pocket maps.
         image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/RNA3DB"
-        badges: ["RNA", "Clustering", "Curation", "Dataset"]
+        badges: ["RNA","Ligand","Bash","Python","Pipeline","Dataset"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/RNA3DB
+            url: https://github.com/LinTzuTang/pdbbind
 
-      - title: DeepCoy — Decoy Molecule Generation
-        content: Generates decoy molecules for rigorous benchmarking in structure-based virtual screening.
-        image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/DeepCoy/tree/main/examples"
-        badges: ["Decoys", "Virtual Screening", "Cheminformatics", "Benchmarking"]
+      - title: DeepCoy — Property-Matched Decoy Generation
+        content: Automated decoy generation for benchmarking/model evaluation; runnable examples, training/eval scripts, and pretrained pointers.
+        image: /img/projects/9.png
+        badges: ["Ligand","Decoys","Benchmarking","Python","Dataset"]
         links:
           - icon: fab fa-github
             url: https://github.com/LinTzuTang/DeepCoy/tree/main/examples
 
-      - title: RNAmigos2 — RNA-Targeted Virtual Screening
-        content: Large-scale screening pipeline (~10M molecules) across multiple RNA targets; docking/scoring with Vina.
+      - title: RNA & Molecular Analysis Toolkit
+        content: Handy scripts (RDKit/Biopython/PyMOL) for RNA–ligand analysis—fingerprints, distance/contact maps, and inter-format conversions.
         image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos"
-        badges: ["RNA", "Virtual Screening", "Docking", "Vina"]
+        badges: ["RNA","Toolkit","RDKit","Python"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos
+            url: https://github.com/LinTzuTang/rna_tools
+
+      - title: AI4AMP — Antimicrobial Peptide Predictor
+        content: PC6 encoding + CNN/LSTM for antimicrobial peptide prediction; CLI + quick demo + web workflow.
+        image: /img/projects/3.png
+        badges: ["Peptides","AMP","CNN","LSTM","Python","Web","Prediction"]
+        links:
+          - icon: fab fa-github
+            url: https://github.com/LinTzuTang/AI4AMP_predictor
 
       - title: AI4AVP — Antiviral Peptide Predictor
-        content: Deep learning with GAN-based data augmentation for antiviral peptide prediction.
-        image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/AI4AVP_predictor"
-        badges: ["AVP", "GAN", "Deep Learning", "Prediction"]
+        content: PC6 + CNN with GAN-based data augmentation for antiviral peptide prediction; demo scripts and training code.
+        image: /img/projects/8.png
+        badges: ["Peptides","AVP","CNN","Python","Web","Prediction"]
         links:
           - icon: fab fa-github
             url: https://github.com/LinTzuTang/AI4AVP_predictor
 
-      - title: AI4ACP — Peptide Drugs for Cancer Therapy
-        content: Deep learning models for peptide-based anticancer activity prediction and analysis.
+      
+
+      - title: Cheminformatics & Molecular DB Playbook
+        content: From RDKit basics and MolDB exploration/screening to protein design (RFdiffusion + ProteinMPNN + AlphaFold) in one tutorial set.
         image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/AI4ACP"
-        badges: ["ACP", "Cancer", "Deep Learning", "Peptides"]
+        badges: ["Protein","RDKit","Python","Tutorial"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/AI4ACP
+            url: https://github.com/LinTzuTang/cheminformatics
 
-      - title: Hemolysis Predictor
-        content: ML/DL models for hemolysis risk prediction in peptide/drug design workflows.
+      - title: CGH Data Science Workshop (Teaching)
+        content: Hospital-oriented Python/Data Science materials (data processing, EDA, feature engineering, modeling & evaluation) with hands-on notebooks.
         image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/Hemolysis"
-        badges: ["Hemolysis", "Toxicity", "Deep Learning", "Peptides"]
+        badges: ["Healthcare","Python","Tutorial","Workshop"]
         links:
           - icon: fab fa-github
-            url: https://github.com/LinTzuTang/Hemolysis
-
-      - title: RMalign — RNA Structural Alignment
-        content: Tools for RNA 3D structural alignment/superposition to support comparative analyses.
-        image: /img/projects/0.jpg
-        primary_link: "https://github.com/LinTzuTang/RMalign"
-        badges: ["RNA", "Alignment", "3D", "Superposition"]
-        links:
-          - icon: fab fa-github
-            url: https://github.com/LinTzuTang/RMalign
-
+            url: https://github.com/LinTzuTang/cgh_data_science_workshop
   
   # Contact
   contact:
-    enable: false
-    content: "My inbox is always open—happy to chat about AI for Bio and collaborations."
+    enable: true
+    content: "Always happy to connect — feel free to reach out about potential collaborations"
     btnName: "Email me"
-    btnLink: "mailto:b03601046@gmail.com"
+    # email: "b03601046@gmail.com"   
+    formspree:
+      enable: true
+      formId: "mblkegzl" 
 
   # Footer
   footer:
@@ -398,11 +399,13 @@ params:
       openInNewTab: true
 
   terms:
-    read: "Read"
-    toc: "Table Of Contents"
-    copyright: "All rights reserved"
-    pageNotFound: "Page not found"
-    emailText: "Check out this site"
+    copyright: "Tzu-Tang Lin. All rights reserved"
+  # terms:
+  #   read: "Read"
+  #   toc: "Table Of Contents"
+  #   copyright: "All rights reserved"
+  #   pageNotFound: "Page not found"
+  #   emailText: "Check out this site"
 
   datesFormat:
     article: "Jan 2, 2006"
