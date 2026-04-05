@@ -163,6 +163,7 @@ params:
           - Designed and implemented **structure-based docking and virtual screening systems** for compound–target discovery.
           - Translated biomedical expert knowledge into machine-readable frameworks to enable AI-driven inference.
           - Presented an **AI-orchestrated drug repurposing platform** at **NVIDIA GTC 2026**, selected as **Finalist (Top 8/158)**.
+
       - job: "Research Assistant"
         company: "University of Florida — College of Pharmacy"
         companyUrl: "https://pharmacy.ufl.edu/"
@@ -173,7 +174,6 @@ params:
           - Curated RNA–small molecule datasets (PDB, PDBbind, HARIBOSS); automated ligand-pocket detection, structure‑based clustering (RNA3DB, RMalign), and feature extraction (RDKit, Biopython, PyMOL).
           - Performed 10M-scale virtual screening (RNAmigos), docking score evaluation (AutoDock Vina), and decoy generation (DeepCoy).
           - Explored generative AI protein design with RFdiffusion, AlphaFold, and ProteinMPNN.
-
 
       - job: "Research Assistant"
         company: "Virginia Tech — Dept of Computer Science"
