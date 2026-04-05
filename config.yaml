@@ -138,7 +138,7 @@ params:
     title: "News"
     items:
       - date: "2026-03"
-        title: "**Finalist (Top 8/158)** at **NVIDIA GTC 2026**, presenting an `AI-orchestrated drug repurposing platform` (Poster)"
+        title: "**Finalist (Top 8/158)** at **NVIDIA GTC 2026**, presenting an **AI-orchestrated drug repurposing platform** (Poster)"
       - date: "2025-09"
         title: "Currently **Special Assistant to the GM & AI R&D Manager** at **Repurgenesis Co., LTD.**, building an AI-orchestrated drug repurposing platform."
       - date: "2024-05"
