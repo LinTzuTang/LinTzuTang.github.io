@@ -137,10 +137,12 @@ params:
     enable: true
     title: "News"
     items:
-      - date: "2025-07"
-        title: "**`Seeking full-time opportunities`** in AI-driven bioinformatics, drug discovery, and precision medicine."
+      - date: "2026-03"
+        title: "**Finalist (Top 8/158)** at **NVIDIA GTC 2026**, presenting an `AI-orchestrated drug repurposing platform` (Poster)"
+      - date: "2025-09"
+        title: "Currently **Special Assistant to the GM & AI R&D Manager** at **Repurgenesis Co., LTD.**, building an AI-orchestrated drug repurposing platform."
       - date: "2024-05"
-        title: "Started Ph.D. at the University of Florida College of Pharmacy, focusing on AI-driven drug discovery."
+        title: "Ph.D. training at the **University of Florida College of Pharmacy** in AI-driven drug discovery; later transitioned to industry to build applied AI systems."
       - date: "2023-12"
         title: "Developed AI antimicrobial peptide platform 'AI Fleming' at Academia Sinica (2018–2022), awarded the **20th National Innovation Award**."
       - date: "2023-09"
@@ -152,6 +154,15 @@ params:
     enable: true
     title: "Experience"
     items:
+      - job: "AI R&D Manager & Special Assistant to the GM"
+        company: "Repurgenesis Co., LTD."
+        companyUrl: ""
+        date: "Sep 2025 – Present"
+        content: |
+          - Led development of an AI-orchestrated drug repurposing platform integrating structure-based modeling, knowledge graph reasoning, and gene expression analysis.
+          - Designed and implemented **structure-based docking and virtual screening systems** for compound–target discovery.
+          - Translated biomedical expert knowledge into machine-readable frameworks to enable AI-driven inference.
+          - Presented an **AI-orchestrated drug repurposing platform** at **NVIDIA GTC 2026**, selected as **Finalist (Top 8/158)**.
       - job: "Research Assistant"
         company: "University of Florida — College of Pharmacy"
         companyUrl: "https://pharmacy.ufl.edu/"

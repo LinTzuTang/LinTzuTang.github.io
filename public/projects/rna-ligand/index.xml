@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cross‑Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity on Tzu-Tang Lin (林子棠)</title>
-    <link>http://localhost:1313/projects/rna-ligand/</link>
+    <link>https://LinTzuTang.github.io/projects/rna-ligand/</link>
     <description>Recent content in Cross‑Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity on Tzu-Tang Lin (林子棠)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/rna-ligand/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://LinTzuTang.github.io/projects/rna-ligand/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
