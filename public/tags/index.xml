@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Tzu-Tang Lin (林子棠)</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://LinTzuTang.github.io/tags/</link>
     <description>Recent content in Tags on Tzu-Tang Lin (林子棠)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://LinTzuTang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://LinTzuTang.github.io/tags/ai/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://LinTzuTang.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Bioinformatics</title>
-      <link>http://localhost:1313/tags/bioinformatics/</link>
+      <link>https://LinTzuTang.github.io/tags/bioinformatics/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bioinformatics/</guid>
+      <guid>https://LinTzuTang.github.io/tags/bioinformatics/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal</title>
-      <link>http://localhost:1313/tags/personal/</link>
+      <link>https://LinTzuTang.github.io/tags/personal/</link>
       <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/personal/</guid>
+      <guid>https://LinTzuTang.github.io/tags/personal/</guid>
       <description></description>
     </item>
   </channel>

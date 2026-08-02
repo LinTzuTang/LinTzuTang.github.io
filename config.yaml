@@ -32,15 +32,18 @@ menu:
     - name: Education
       url: /#education
       weight: 4
-    - name: Tools
-      url: /#tools
+    - name: Credentials
+      url: /#credentials
       weight: 5
+    - name: Platforms
+      url: /#tools
+      weight: 6
     - name: Projects
       url: /#projects
-      weight: 6
+      weight: 7
     - name: Contact
       url: /#contact
-      weight: 7
+      weight: 8
     # - identifier: blog
     #   name: Blog
     #   title: Blog posts
@@ -51,7 +54,7 @@ menu:
 
 params:
   title: "Tzu-Tang Lin"
-  description: "AI × Bioinformatics"
+  description: "AI platform strategy, solutions architecture, AI R&D leadership, and AI for Science."
   favicon: "/img/c.jpeg"
   useBootstrapCDN: true
 
@@ -84,20 +87,20 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
+    intro: "AI R&D Leader & Platform Architect"
     title: "Tzu-Tang Lin"
-    subtitle: "AI × Bioinformatics  R&D"
+    subtitle: "Building AI Platforms from Strategy to Scale"
     content: >
-      Motivated to tap into the potential of **AI** and **data science** to reveal
-      game-changing capabilities that accelerate the advancement of precision medicine  
-      and maximally benefit public health.
+      With 8+ years across **platform strategy, solutions architecture, and
+      hands-on AI delivery**, I turn complex scientific and enterprise workflows
+      into scalable agentic systems—with deep expertise in **AI for Science**.
     image: /img/b.png
     roundImage: false
     bottomImage:
       enable: false
     button:
       enable: true
-      name: "CV (pdf)       "
+      name: "Resume (PDF)"
       url: "/files/Tzu-Tang_Lin_CV.pdf"
       download: false
       newPage: true
@@ -115,21 +118,21 @@ params:
     title: "About Me"
     image: "/img/a.jpg"
     content: |-
-      AI × Bioinformatics researcher & developer with extensive cross-disciplinary R&D experience spanning drug discovery, genomics, and biomedical AI. Passionate about transforming complex biological data into actionable insights for advancing precision medicine and improving public health outcomes.
+      I am an **AI platform and solutions architecture professional** with 8+ years of experience across academic research, startups, FinTech, and AI for Science. My work spans AI model development, scalable research platforms, high-throughput computing, AI tool integration, and end-to-end solution delivery.
 
-      Proven expertise in AI-driven RNA–small molecule drug modeling, antimicrobial peptide and functional protein design, next-generation sequencing (NGS) and genome-wide association studies (GWAS), as well as electronic health records (EHR)–based medical applications.
+      As **AI R&D Manager and Special Assistant to the General Manager at Repurgenesis**, I lead AI platform strategy, R&D roadmapping, cross-functional execution, and product delivery. I have contributed to building both the company and its core AI platform from 0 to 1, integrating AI models, data pipelines, and scientific tools into practical R&D solutions. Alongside this role, I am pursuing an **M.S. in Data Science at National Taiwan University**.
 
-      Experienced in independent research, publishing peer-reviewed articles, serving as a scientific reviewer, and mentoring students. Skilled in leading end-to-end research pipelines—from dataset curation to deep learning model development—and collaborating effectively with academia, hospitals, and industry partners.
+      Previously, I conducted AI research at Academia Sinica, the University of Florida, and Virginia Tech, developing predictive, generative, and multimodal models, biomedical AI platforms, and large-scale computational workflows. At Cathay Financial Holdings, I worked on enterprise data science and FinTech applications. These experiences enable me to bridge research depth with product and business requirements.
+
+      I have authored multiple peer-reviewed AI publications as first author and was selected as a **2026 NVIDIA GTC Poster Finalist** for an AI orchestration framework for drug R&D. Going forward, I am focused on AI platform strategy, solutions architecture, AI product development, and technical leadership—turning advanced AI capabilities into scalable products with real-world and business impact.
     skills:
       enable: true
-      title: "Research Interests"
+      title: "Core Expertise"
       items:
-        - "Bioinformatics"
-        - "Data Science"
-        - "Machine Learning"
-        - "AI Drug Discovery"
-        - "Precision Medicine"
-        - "Genetic Analysis"  
+        - "AI Platform Strategy & Solutions Architecture"
+        - "Agentic AI, RAG & Knowledge Systems"
+        - "AI R&D Leadership & Product Delivery"
+        - "AI for Science & High-Throughput Computing"
 
   
 
@@ -137,18 +140,16 @@ params:
     enable: true
     title: "News"
     items:
+      - date: "2026-04"
+        title: "Co-authored **Harnessing Sequence Embedding and Ensemble Learning to Identify Antifungal Peptides with Low Hemolytic Risk**, published in **ACS Omega**."
       - date: "2026-03"
-        title: "**Finalist (Top 8/158)** at **NVIDIA GTC 2026**, presenting an **AI-orchestrated drug repurposing platform** (Poster)"
+        title: "Selected as a **Finalist (Top 8/158)** at **NVIDIA GTC 2026** for an AI-orchestrated drug repurposing platform."
+      - date: "2026-03"
+        title: "Earned four **NVIDIA-Certified Associate** credentials across AI infrastructure, multimodal generative AI, LLMs, and accelerated data science."
       - date: "2025-09"
-        title: "Currently **Special Assistant to the GM & AI R&D Manager** at **Repurgenesis Co., LTD.**, building an AI-orchestrated drug repurposing platform."
-      - date: "2024-05"
-        title: "Ph.D. training at the **University of Florida College of Pharmacy** in AI-driven drug discovery; later transitioned to industry to build applied AI systems."
+        title: "Joined **Repurgenesis** as **AI R&D Manager & Special Assistant to the General Manager**, leading AI platform strategy and product delivery."
       - date: "2023-12"
-        title: "Developed AI antimicrobial peptide platform 'AI Fleming' at Academia Sinica (2018–2022), awarded the **20th National Innovation Award**."
-      - date: "2023-09"
-        title: "Joined Virginia Tech as Research Assistant in Computer Science, enrolled in the Genetics, Bioinformatics, and Computational Biology program."
-      - date: "2023-04"
-        title: "Published research **Intelligent De Novo Design of Novel Antimicrobial Peptides against Antibiotic-Resistant Bacteria Strains** in the *International Journal of Molecular Sciences*."
+        title: "Co-received the **20th National Innovation Award** for **AI Fleming**, an AI-powered therapeutic peptide discovery platform."
 
   experience:
     enable: true
@@ -159,65 +160,58 @@ params:
         companyUrl: ""
         date: "Sep 2025 – Present"
         content: |
-          - Led development of an AI-orchestrated drug repurposing platform integrating structure-based modeling, knowledge graph reasoning, and gene expression analysis.
-          - Designed and implemented **structure-based docking and virtual screening systems** for compound–target discovery.
-          - Translated biomedical expert knowledge into machine-readable frameworks to enable AI-driven inference.
-          - Presented an **AI-orchestrated drug repurposing platform** at **NVIDIA GTC 2026**, selected as **Finalist (Top 8/158)**.
+          - Lead **AI platform strategy and R&D roadmapping**, translating scientific workflows into prioritized modules, development milestones, and product plans.
+          - Architected the integration of four domain-specific R&D modules into a unified **agentic AI platform** combining scientific tools, RAG, knowledge graph reasoning, automated SOPs, evidence scoring, and human-in-the-loop review.
+          - Lead development of a scalable structure-based drug repurposing platform integrating proprietary data, automated molecular preparation, docking, affinity prediction, and candidate ranking.
+          - Evaluated NVIDIA BioNeMo, NeMo Agent Toolkit, and NIM for AI for Science architecture and GPU-accelerated delivery; first-authored a **2026 NVIDIA GTC Poster Finalist** submission ranked **Top 8 of 158**.
+          - Support the General Manager across corporate strategy, fundraising preparation, R&D prioritization, external partnerships, and product positioning.
+          - Translate technical capabilities into investor materials, executive presentations, board-level AI education, and partner demonstrations.
 
       - job: "Research Assistant"
         company: "University of Florida — College of Pharmacy"
         companyUrl: "https://pharmacy.ufl.edu/"
         date: "May 2024 – Aug 2025"
         content: |
-          - Built a cross‑domain multimodal contrastive framework for RNA–ligand affinity, integrating RiNALMo & SMI‑TED LLMs plus 3D structure into CLIP‑based foundation models; Test RMSE 1.68 vs 1.85 benchmark.
-          - Applied biomolecule GNNs (GIGN), 3D-CNNs, and a custom representation module for fine-tuning and transfer learning.
-          - Curated RNA–small molecule datasets (PDB, PDBbind, HARIBOSS); automated ligand-pocket detection, structure‑based clustering (RNA3DB, RMalign), and feature extraction (RDKit, Biopython, PyMOL).
-          - Performed 10M-scale virtual screening (RNAmigos), docking score evaluation (AutoDock Vina), and decoy generation (DeepCoy).
-          - Explored generative AI protein design with RFdiffusion, AlphaFold, and ProteinMPNN.
+          - Developed a multimodal foundation model integrating RNA sequences, molecular representations, and 3D structural information for RNA–ligand binding affinity prediction and virtual screening.
+          - Built large-scale AI training, tuning, and screening workflows on a **100+ NVIDIA A100 GPU cluster**, processing up to **10 million molecular inputs** through automated data pipelines and SLURM-managed computing.
 
       - job: "Research Assistant"
         company: "Virginia Tech — Dept of Computer Science"
         companyUrl: "https://cs.vt.edu/" 
         date: "Aug 2023 – Apr 2024"
         content: |
-          - Conducted metagenomic analysis of wastewater treatment plants for ARGs/AMPs using Diamond BLAST, Minimap2, MEGAHIT, MetaSPAdes, Kraken2 and related tools.
-          - Built PathoVF, a pathogen/virulence‑factor predictor using multi‑modal DNA encodings and protein LLMs (ProtBERT, ESM‑1b).
+          - Developed **PathoVF**, an AI bioinformatics tool combining multimodal DNA representations, protein descriptors, protein language model embeddings, and machine learning for pathogenicity and virulence prediction.
+          - Built TB-scale metagenomic pipelines for sequence analysis, taxonomic profiling, and detection of antimicrobial-resistance and virulence-associated signals.
 
       - job: "Data Scientist"
         company: "Cathay Financial Holdings — Data Science Lab"
         companyUrl: "https://www.cathayholdings.com/holdings/eng/home"
         date: "Dec 2022 – May 2023"
         content: |
-          - Improved ICU sepsis early‑warning and drug recommendations via Feature Tokenizer Transformer (FT‑Transformer) on EHR data; achieving accuracy 0.915.
-          - Contributed to FinTech AI projects: signature recognition, synthetic banking data (Generative AI), and a federated-learning financial AI agent; deployed at scale on AWS EC2/SageMaker/S3.
-          - Leveraged AWS cloud services for project workflows, including EC2 for scalable compute, SageMaker for model training and deployment, and S3 for secure data storage and retrieval.
-          - Served as instructor for the Cathay General Hospital Data Science Workshop, delivering Python programming and data processing training for hospital staff.
-          - Achieved Bronze (Top 9%) in Kaggle Novozymes Enzyme Stability Prediction Challenge (solo).
+          - Developed enterprise AI proof-of-concept solutions across FinTech and healthcare, including signature recognition, synthetic financial data generation, federated AI agents, and clinical risk prediction.
+          - Built an EHR-based ICU sepsis early-warning model using a Feature Tokenizer Transformer, achieving **0.915 accuracy** in internal evaluation.
+          - Used AWS EC2, SageMaker, and S3 for scalable model development and secure data workflows; partnered with business, healthcare, and technical stakeholders and instructed Cathay General Hospital’s Data Science Workshop.
           
       - job: "Bioinformatics Engineer / Research Assistant"
         company: "Academia Sinica — Institute of Information Science"
         companyUrl: "https://www.iis.sinica.edu.tw/en/index.html"
         date: "Jul 2018 – Dec 2022"
         content: |
-          - Developed an AI-driven antimicrobial peptide platform; curated datasets and applied CNN, LSTM, Doc2Vec, and WGAN-gp for prediction and generation.
-            -	Designed two peptides with in vitro activity against cancer and antibiotic-resistant bacteria (MIC 2–45 μg/mL).
-            -	Packaged models into AI4AXP web platform (antibacterial, antifungal, anticancer, antivirus, anti-coronavirus, hemolysis).
-            -	Invited to Healthcare+ Expo Taiwan (2021, 2022); won the 20th National Innovation Award (2023) for 'AI Fleming'.
-          - Analyzed Taiwan Biobank genomes; developed DL models for disease phenotypes from SNPs for precision medicine.
-          - Performed GWAS on aquatic species using PLINK, GATK, DeepVariant; transferred patented know-how for aquaculture SNP microarray design.
-          - Supervised four summer interns at Academia Sinica, Institute of Information Science (2019-2022), guiding them to successfully complete their research projects.
-          - Proposed PC6 physicochemical protein encoding; integrated into AI4AMP deep-learning predictor surpassing prior SOTA.
+          - Led development of **AI Fleming**, an AI-driven antimicrobial peptide discovery platform spanning data curation, predictive modeling, generative design, candidate prioritization, and experimental validation.
+          - Developed CNN, LSTM, Doc2Vec, ensemble, and WGAN-GP models for peptide activity prediction and de novo sequence generation.
+          - Designed AI-generated peptide candidates; **2 of 8** experimentally validated candidates demonstrated in vitro activity against cancer cells and antibiotic-resistant bacteria, with MIC values of **2–45 μg/mL**.
+          - Integrated multiple predictive models into the public **AI4AXP** platform and developed the PC6 protein encoding method used in AI4AMP; contributed to work recognized with the **20th National Innovation Award**.
 
   education:
     enable: true
     title: "Education"
     items:
-      - title: "Ph.D. in Pharmaceutical Sciences — Withdrawn"
+      - title: "M.S. in Data Science"
         school:
-          name: "University of Florida, College of Pharmacy"
-          url: "https://pharmacy.ufl.edu/"
-        date: "May 2024 – Aug 2025"
-        content: "Focus: AI Drug Discovery (AIDD)"
+          name: "National Taiwan University, College of Electrical Engineering and Computer Science"
+          url: "https://www.eecs.ntu.edu.tw/"
+        date: "Expected Jun 2027"
+        content: "Graduate study in data science alongside full-time AI R&D leadership."
 
       - title: "B.S. in Agronomy (Specialization in Experimental Design and Biostatistics)"
         school:
@@ -226,9 +220,26 @@ params:
         date: "Sep 2015 – Jun 2019"
         content: "Awarded Undergraduate Research Fellowship, Ministry of Science and Technology (MOST), Taiwan."
 
+  credentials:
+    enable: true
+    title: "Credentials"
+    items:
+      - title: "AI Infrastructure and Operations"
+        issuer: "NVIDIA-Certified Associate"
+        date: "Mar 2026"
+      - title: "Generative AI Multimodal"
+        issuer: "NVIDIA-Certified Associate"
+        date: "Mar 2026"
+      - title: "Generative AI LLMs"
+        issuer: "NVIDIA-Certified Associate"
+        date: "Mar 2026"
+      - title: "Accelerated Data Science"
+        issuer: "NVIDIA-Certified Associate"
+        date: "Mar 2026"
+
   tools:
     enable: true
-    title: "Tools"
+    title: "Selected Platforms"
     items:
       - title: "AI4AXP"
         url: "https://axp.iis.sinica.edu.tw/" 
@@ -268,7 +279,8 @@ params:
   # Projects
   projects:
     enable: true
-    maxItems: 0
+    title: "Selected Technical Projects"
+    maxItems: 6
     items:
       - title: Cross-Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity
         content: CLIP-style cross-modal foundation model integrating RNA sequences, LLM SMILES (RiNALMo/SMI-TED), and 3D features for RNA–small-molecule affinity; supports downstream fine-tuning.
@@ -373,7 +385,7 @@ params:
   # Contact
   contact:
     enable: true
-    content: "Always happy to connect — feel free to reach out about potential collaborations"
+    content: "I welcome conversations about AI platform strategy, solutions architecture, agentic AI, and AI for Science."
     btnName: "Email me"
     # email: "b03601046@gmail.com"   
     formspree:

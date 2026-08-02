@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Tzu-Tang Lin (林子棠)</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://LinTzuTang.github.io/projects/</link>
     <description>Recent content in Projects on Tzu-Tang Lin (林子棠)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://LinTzuTang.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cross‑Domain Multimodal Contrastive Learning for RNA–Ligand Binding Affinity</title>
-      <link>http://localhost:1313/projects/rna-ligand/</link>
+      <link>https://LinTzuTang.github.io/projects/rna-ligand/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/rna-ligand/</guid>
+      <guid>https://LinTzuTang.github.io/projects/rna-ligand/</guid>
       <description>&lt;p&gt;Built a CLIP‑style framework integrating RNA sequence, ligand SMILES (RiNALMo, SMI‑TED), and 3D structural features; achieved &lt;strong&gt;Test RMSE ~1.68&lt;/strong&gt; vs 1.85 benchmark. Includes structure‑based clustering (RNA3DB, RMalign) and pocket extraction (RDKit, Biopython, PyMOL).&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/LinTzuTang/RLC-CLIP/tree/main/CoRSA&#34;&gt;Code&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/LinTzuTang/RLC-CLIP/blob/main/CoRSA/docs/Cross-Domain%20Multimodal%20Contrastive%20Learning%20for%20RNA-Ligand%20Binding%20Affinity%20Prediction.pdf&#34;&gt;Report&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Generative Protein Design</title>
-      <link>http://localhost:1313/projects/rf-protein-design/</link>
+      <link>https://LinTzuTang.github.io/projects/rf-protein-design/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/rf-protein-design/</guid>
+      <guid>https://LinTzuTang.github.io/projects/rf-protein-design/</guid>
       <description>&lt;p&gt;Explored &lt;strong&gt;RFdiffusion&lt;/strong&gt; for backbone generation, &lt;strong&gt;AlphaFold&lt;/strong&gt; for structure prediction, and &lt;strong&gt;ProteinMPNN&lt;/strong&gt; for sequence design to iterate novel proteins.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/LinTzuTang/cheminformatics/tree/main/RFdiffusion-Protein-Design&#34;&gt;Code notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>RNA‑targeted Virtual Screening &amp; Docking</title>
-      <link>http://localhost:1313/projects/rnadrug-vs/</link>
+      <link>https://LinTzuTang.github.io/projects/rnadrug-vs/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/rnadrug-vs/</guid>
+      <guid>https://LinTzuTang.github.io/projects/rnadrug-vs/</guid>
       <description>&lt;p&gt;Scaled &lt;strong&gt;RNAmigos&lt;/strong&gt; screening to ~10M molecules across 3 RNAs, evaluated with &lt;strong&gt;AutoDock Vina&lt;/strong&gt;, and generated decoys with &lt;strong&gt;DeepCoy&lt;/strong&gt; to enable robust benchmarking.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/LinTzuTang/rnamigo2/tree/main/rnamigos&#34;&gt;RNAmigos notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
